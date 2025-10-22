@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BARVIT — profesjonalny wywóz mebli</title>
+  <meta name="description" content="BARVIT — profesjonalny wywóz mebli w Krakowie. Szybko, tanio i bez stresu. Wynoszenie, transport, opróżnianie mieszkań i piwnic.">
+  <meta name="keywords" content="wywóz mebli, wynoszenie mebli, opróżnianie mieszkań, Kraków, BARVIT">
+
+  <style>
+    :root {
+      --blue: #0b60b0;
+      --dark-blue: #084a88;
+      --yellow: #f4b400;
+      --bg: #ffffff;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--dark-blue); line-height: 1.4; }
+    .container { max-width: 900px; margin: 24px auto; padding: 28px; }
+    header { text-align: center; margin-bottom: 20px; }
+    .logo img { max-width: 280px; width: 100%; height: auto; margin: 0 auto; display: block; }
+    h1 { font-size: 40px; margin: 10px 0 0; color: var(--blue); letter-spacing: 1px; }
+    .slogan { font-size: 16px; color: var(--blue); margin-top: 6px; }
+    
+    main { margin: 28px 0 18px; }
+    .card { background: #fff; padding: 22px; border-radius: 10px; box-shadow: 0 6px 20px rgba(10,50,100,0.06); margin-bottom: 18px; opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+    .card.show { opacity: 1; transform: translateY(0); }
+    .headline { font-weight: 800; color: var(--blue); font-size: 28px; margin: 0; }
+    .subheadline { color: var(--dark-blue); font-size: 18px; margin: 12px 0; }
+    .lead { font-size: 18px; color: var(--dark-blue); text-align: center; }
+    .services { margin-top: 12px; }
+    .services ul { padding-left: 20px; color: var(--dark-blue); font-size: 18px; margin: 8px 0; }
+    
+    .cta { display: flex; gap: 14px; align-items: center; justify-content: center; margin-top: 14px; flex-wrap: wrap; }
+    .btn { background: var(--blue); color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 700; transition: background 0.3s, color 0.3s; }
+    .btn:hover { background: var(--dark-blue); }
+    .btn.secondary { background: transparent; border: 2px solid var(--blue); color: var(--blue); }
+    .btn.secondary:hover { background: var(--blue); color: white; }
+
+    .pricing { margin-top: 40px; opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+    .pricing.show { opacity: 1; transform: translateY(0); }
+    .pricing h2 { color: var(--blue); font-size: 26px; margin-bottom: 16px; text-align: center; }
+    .pricing table { width: 100%; border-collapse: collapse; font-size: 18px; }
+    .pricing th, .pricing td { padding: 10px 8px; vertical-align: top; border-bottom: 1px solid #ddd; text-align: left; }
+    .pricing th { background: #f5f5f5; }
+    .pricing tr:last-child td { border-bottom: none; }
+
+    footer { margin-top: 40px; border-top: 3px solid var(--blue); padding-top: 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .contact { font-size: 18px; color: var(--dark-blue); }
+    .contact a { color: var(--dark-blue); text-decoration: none; font-weight: 700; }
+
+    .text-center { text-align: center; }
+    
+    @media (max-width: 768px) {
+      h1 { font-size: 32px; }
+      .headline { font-size: 24px; }
+      .lead, .services ul { font-size: 16px; }
+      .pricing th, .pricing td { font-size: 16px; }
+    }
+    @media (max-width: 520px) {
+      .container { padding: 18px; }
+      h1 { font-size: 28px; }
+      .headline { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="Barvit.png" alt="Logo firmy BARVIT — wywóz mebli">
+      </div>
+      <h1>BARVIT</h1>
+      <div class="slogan">Twój spokojny sposób na porządek</div>
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="headline">Szybko, czysto i bez stresu — BARVIT wywiezie za Ciebie!</div>
+        <p class="subheadline">Działamy szybko, tanio i terminowo.</p>
+      </div>
+
+      <div class="card">
+        <p class="lead">Oferujemy profesjonalny wywóz starych mebli.<br>Zajmujemy się:</p>
+        <div class="services">
+          <ul>
+            <li>wynoszeniem i transportem mebli,</li>
+            <li>opróżnianiem mieszkań, piwnic i garaży,</li>
+            <li>szybkim i bezpiecznym załadunkiem.</li>
+          </ul>
+        </div>
+        <div class="text-center">
+          <strong>Działamy szybko, tanio i terminowo!</strong>
+        </div>
+      </div>
+
+      <div class="pricing">
+        <h2>Cennik</h2>
+        <table>
+          <thead>
+            <tr><th>Usługa</th><th>Cena</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Wywóz pojedynczego mebla (np. szafa, kanapa, fotel)</td><td><strong>150 zł</strong></td></tr>
+            <tr><td>Wywóz kilku mebli z mieszkania (do 10 sztuk)<br>Meble z 1–2 pokoi</td><td><strong>300 zł</strong></td></tr>
+            <tr><td>Opróżnienie całego mieszkania (2–3 pokoje)<br>Kompleksowy wywóz wszystkich mebli</td><td><strong>700–850 zł</strong></td></tr>
+            <tr><td>Wywóz mebli biurowych (biurka, szafki, krzesła)</td><td><strong>350–500 zł</strong></td></tr>
+            <tr><td>Drobny demontaż (rozkręcenie szafy, stołu itp.)</td><td><strong>+70 zł</strong></td></tr>
+            <tr><td>Dojazd do klienta poza granicami miasta (do 20 km)<br><small>Naliczane od miejsca startu (Kraków)</small></td><td><strong>+2,50 zł/km</strong></td></tr>
+            <tr><td>Dodatkowe piętro bez windy<br>Transport mebli na piętro powyżej parteru</td><td><strong>+20 zł / piętro</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="text-center" style="margin-top:24px">
+        <p style="margin:0 0 8px;font-weight:700;color:var(--blue)">Zadbaj o porządek bez wysiłku — zadzwoń do nas już dziś!</p>
+        <div class="cta">
+          <a class="btn" href="tel:+48695250800" aria-label="Zadzwoń do BARVIT">Zadzwoń: +48 695 250 800</a>
+          <a class="btn secondary" href="mailto:barvit@gmail.com" aria-label="Napisz do BARVIT">Napisz: barvit@gmail.com</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="contact">📧 <a href="mailto:barvit@gmail.com">barvit@gmail.com</a></div>
+      <div class="contact">📞 <a href="tel:+48695250800">+48 695 250 800</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // Animacja przy przewijaniu
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.card, .pricing').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
